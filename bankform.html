@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aplication Form</title>
+    <link rel="stylesheet" href="main.css">    
+</head>
+<body>
+    <div  style="border: 1px solid">
+    <h2 style="text-align: center">Bank Account Form</h2>
+    <form action="#" name="myform" onsubmit="checkform()">
+        <div id="account">
+    <p><h3>Account Type</h3>
+        
+        <p>Please Select the Account Type You Want</p>
+        <select name = "dropdown">
+            <option value = "please Select" selected>Please Select</option>
+            <option value = "saving">Saving Account</option>
+            <option value="current">Current Account</option>
+            <option value="money">Money Market Account</option>
+         </select>
+        </p>
+    </div>
+    <div>
+         <p><h3>Contact Information</h3>
+            
+               <select name="dropdown">
+                <option value="mr">Mr</option>
+                <option value="ms">Miss</option>
+                <option value="mrs">Mrs</option>
+                </select>
+                First Name: <input type="text" name="fname" placeholder="First Name">
+                Middle Name: <input type="text" name="mname" placeholder="Middle Name">
+                Last Name: <input type="text" name="lname" placeholder="Last Name"><br><br><br>
+                Mobile No: <input type="number" name="phno" placeholder="Mobile No">&nbsp;&nbsp;&nbsp;
+                Email: <input type="email" name="email" placeholder="Email"><br>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <h3>Permanant Address</h3>
+            
+              <input type="text" name="sname" placeholder="Street Address"><br><br>
+              <input type="text" name="city" placeholder="City">&nbsp;&nbsp;
+              <input type="text" name="state" placeholder="State"><br><br>
+              <input type="text" name="country" placeholder="Country">&nbsp;&nbsp;
+              <input type="text" name="code" placeholder="Postal/Zip Code">
+        </p>
+    </div>
+
+    <div>
+        <h3>Identification</h3> 
+        <p>
+          <h4>Citizenship</h4> 
+          <input type="radio" name="cityzen" value="india">India &nbsp;&nbsp;
+          <input type="radio" name="other" value="other">Other<br><br>
+          DOB <input type="date" name="date" placeholder="MM/DD/YY">&nbsp;&nbsp;
+          PAN No <input type="text" name="pan" placeholder="Enter Your PAN">&nbsp;&nbsp;
+          Addhar No <input type="text" name="ano" placeholder="Enter Your Aadhar No">&nbsp;&nbsp;
+          Nationality <input type="text" name="nat" placeholder="e.g. Indian"><br><br>
+          Marital Status <input type="text" name="status" placeholder="Please Select">
+          <select name="dropdown">
+              <option value="select" selected>Please Select</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Widowed">Widowed</option>
+              <option value="Separated">Separated</option>
+             </select><br><br>
+          Occupation <input type="text" name="occ" placeholder="">&nbsp;&nbsp;
+          Employer Details (Optional)<input type="text" name="occ" placeholder="">&nbsp;&nbsp;
+          Annual Income (Optional)<input type="text" name="income" placeholder="LPA"><br>
+         </p>
+        </div>
+
+      <div>
+        <p>
+          <h3>Facility Required</h3>
+          <input type="checkbox" name="cheque" value="on">Cheque Book &nbsp;
+          <input type="checkbox" name="ibank" value="on">Internet Banking &nbsp;
+          <input type="checkbox" name="ccard" value="on">Credit Card &nbsp;
+          <input type="checkbox" name="dcard" value="on">Debit Card <br><br>
+         <h3>Statements Of Account Trrough</h3> 
+         <input type="checkbox" name="pass" value="on">Pass Book &nbsp;
+         <input type="checkbox" name="post" value="on">Post &nbsp;
+         <input type="checkbox" name="email" value="on">E Mail &nbsp;
+         <input type="checkbox" name="branch" value="on">Delivery At Branch &nbsp;
+         
+        </p>
+    </div>
+    <div>
+        <p>
+            <h3>Terms And Conditions</h3> 
+            By completing this account registration form, you agree to the terms and conditions that govern your account and your relationship with the bank. 
+
+            Please check the box below to confirm agreement before sending the bank account registration information.
+            <input type="checkbox" name="tick" value="on">I agree to terms and conditions
+        </p>
+        <div style="text-align: center"> 
+        <input type="submit" value="Register The Account"> &nbsp;&nbsp;
+        <input type="reset" value="Reset">
+    </div>
+    </div>
+</form>
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>
